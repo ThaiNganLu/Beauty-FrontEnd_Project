@@ -378,6 +378,7 @@ a:active {
     width: 110%;
     height: 300px;
     border: 2px solid #eee;
+    margin-top: 2%;
 }
 /*24.07.2018*/
 /*menu*/
@@ -402,4 +403,24 @@ li.sub-menu-dropdown:hover
 {
     display: none!important;
 }
-
+/*CSS Button*/
+#btnTop 
+{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:  brown;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#btnTop:hover
+{
+    background-color:  #FF0080;
+}
