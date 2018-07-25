@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Skincare</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<link rel="stylesheet" href="../assets/css/style.css">
+		<link rel="stylesheet" href="../assets/css/animate.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- header -->
+		<div id="header"></div>
+		<!-- main menu -->
+		<nav class="navbar navbar-default navbar-default-custom">
+			<div class="container-fluid table-custom">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul id="main-menu" class="nav navbar-nav horizontal-list">
+						<li><a href="home.html" >HOME</a></li>
+						<li class="dropdown sub-menu-dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="skincare.html">SKIN CARE</a>
+						<ul id="ul-sub-menu-dropdown" class="dropdown-menu">
+							<li><a href="#">Page 1-1</a></li>
+							<li><a href="#">Page 1-2</a></li>
+							<li><a href="#">Page 1-3</a></li>
+						</ul>
+					</li>
+					<li><a href="../pages/mask.html" >MASK/PACK</a></li>
+					<li><a href="../pages/makeup.html">MAKE UP</a></li>
+					<li><a href="../pages/body-hair.html">BODY/HAIR</a></li>
+					<li><a href="../pages/nail.html">NAIL</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- content -->
+	<section id="template">
+		<div class="container">
+			<h2 class="skincare-caption">SKIN CARE</h2>
+			<p align="right">HOME>TYPE>SKINCARE</p>
+			<div class="skincare-line">
+				<hr size="10">
+				<div class="content-2">
+					<h3>SKIN CARE HOT ITEM</h3>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-12" style="border-right: 1px solid">
+						<div align="center" style="width: 100%; height: 100%;">
+							<img src="../assets/img/skincare-hotitem-1.jpg"  class="skincare-content-image1">
+							<p>THE THERAPY MOISTURE BLENDING FORMULA CREAM</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-12" style="border-right: 1px solid">
+						<div align="center" style="width: 104%; height: 100%;">
+							<img src="../assets/img/skincare-hotitem-2.jpg"  class="skincare-content-image2">
+							<p>YEHWADAM NOKYONG COLLAGEN CONTOUR LIFT GOLD CAPSULE CREAM</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-12" style="border-right: 1px solid">
+						<div align="center" style="width: 100%; height: 100%;">
+							<img src="../assets/img/skincare-hotitem-3.jpg"  class="skincare-content-image3">
+							<p>THE THERAPY OIL BLENDING FORMULA CREAM</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-12" style="border-right: 1px solid">
+						<div align="center" style="width: 100%; height: 100%;">
+							<img src="../assets/img/skincare-hotitem-4.jpg"  class="skincare-content-image4">
+							<p>CHIA SEED NO SHINE HYDRATING CREAM</p>
+						</div>
+					</div>
+				</div>
+				<!-- Menu Product Child -->
+				<div>
+					<nav class="navbar navbar-inverse">
+						<ul class="nav navbar-nav">
+							<li><a href="#">Skin</a></li>
+							<li><a href="#">Lotion</a></li>
+							<li><a href="#">Essence</a></li>
+							<li><a href="#">Cream</a></li>
+							<li><a href="#">Eye care</a></li>
+							<li><a href="#">Mist</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- footer -->
+<div id="footer"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		//render header footer
+		$("#header").html("<object width=\"100%\" height=\"280px\" type=\"text/html\" data=\"header.html\"></object>");
+		
+		$("#footer").html("<object width=\"100%\" height=\"550px\" type=\"text/html\" data=\"../includes/footer.html\"></object>");
+		//hover submenu
+		$(".sub-menu-dropdown").onmouseover(function(){
+			$("#ul-sub-menu-dropdown").addClass( " afterhover" );
+		})
+		$(".sub-menu-dropdown").onmouseout(function(){
+			$("#ul-sub-menu-dropdown").removeClass( "afterhover" );
+		})
+	})
+</script>
