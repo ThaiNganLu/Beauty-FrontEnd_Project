@@ -124,11 +124,76 @@ a:active {
     font-weight: bold;
 
 }
+/*làm mờ*/
 .home-productskincare
 {
-
+    width:214.83px;
+     height: 107.41px;
      width: 50%;
     -webkit-border-radius: 100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle
+{
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+}
+.preview-text
+{
+    position: relative;
+    width: 50%;
+}
+.preview:hover .home-productskincare
+{
+    opacity: 0.2;
+    
+}
+.preview:hover .home-productmask
+{
+    opacity: 0.2;
+    
+}
+.preview:hover .home-productbody
+{
+    opacity: 0.2;
+    
+}
+.preview:hover .home-productmakeup
+{
+    opacity: 0.2;
+    
+}
+.preview:hover .home-productnail
+{
+    opacity: 0.2;
+    
+}
+.preview:hover .home-productgift
+{
+    opacity: 0.2;
+}
+    
+}
+.preview:hover .middle
+{
+    opacity: 3;
+}
+.preview-text
+{
+
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  margin-top: -72px;
 }
 .home-textskincare
 {
@@ -159,10 +224,14 @@ a:active {
 }
 .home-productbody
 {
-     width:214.83px;
+    width:214.83px;
      height: 107.41px;
      width: 50%;
     -webkit-border-radius: 100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 .home-textbody
 {
@@ -174,10 +243,15 @@ a:active {
     text-align: justify;
 }
 .home-productmakeup
-{ width:214.83px;
+{ 
+    width:214.83px;
      height: 107.41px;
      width: 50%;
     -webkit-border-radius: 100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 .home-textmakeup
 {
@@ -204,6 +278,10 @@ a:active {
      height: 107.41px;
      width: 50%;
     -webkit-border-radius: 100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 .home-textnail
 {
@@ -222,6 +300,10 @@ a:active {
      height: 107.41px;
      width: 50%;
     -webkit-border-radius: 100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 .home-textgift
 {
